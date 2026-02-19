@@ -108,6 +108,9 @@ body {
     padding: 50px 20px;
     background-color: #F4F4F4;
     /* Light gray background */
+    border-top: 2px solid #1C1C1C;
+    /* Piano key style border */
+    border-bottom: 2px solid #1C1C1C;
 }
 
 .reviews h2 {
@@ -123,6 +126,15 @@ body {
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
+    border: 2px solid #1C1C1C;
+    /* Black piano key-style border */
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    /* White background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .review p {
@@ -134,6 +146,13 @@ body {
 .review .author {
     font-weight: bold;
     font-size: 1.1rem;
+}
+
+/* Hover effect for reviews */
+.review:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* Slightly deeper shadow */
 }
 
 /* Video Links Section */
@@ -162,14 +181,17 @@ body {
     align-items: center;
     text-align: center;
     width: 200px;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
     border-radius: 8px;
     overflow: hidden;
+    border: 2px solid #1C1C1C;
+    /* Black border around video link */
 }
 
 .video-link img {
     width: 100%;
-    height: auto;
+    height: 150px;
+    object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -181,6 +203,18 @@ body {
 
 .video-link:hover {
     transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* Deeper shadow on hover */
+}
+
+/* Placeholder for video links */
+.video-link img {
+    background-color: #1C1C1C;
+    /* Placeholder color for videos */
+    background-image: url('/assets/images/placeholder-video.jpg');
+    /* Placeholder image */
+    background-size: cover;
+    background-position: center;
 }
 
 /* Beautiful Jekyll Navbar Customizations */
