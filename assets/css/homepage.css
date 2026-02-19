@@ -38,6 +38,7 @@ body {
     max-width: 90%;
 }
 
+
 .hero .buttons {
     display: flex;
     gap: 20px;
@@ -46,17 +47,24 @@ body {
 .hero .buttons a {
     text-decoration: none;
     padding: 15px 30px;
-    background-color: #008AFF;
-    /* Blue, like a piano key */
+    background-color: #1C1C1C;
+    /* Black piano key */
     color: #FFFFFF;
+    /* White text */
     font-size: 1.2rem;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    border: 2px solid #FFFFFF;
+    /* Subtle white outline like piano key edge */
+    transition: all 0.3s;
 }
 
 .hero .buttons a:hover {
-    background-color: #0077CC;
-    /* Slightly darker blue on hover */
+    background-color: #FFFFFF;
+    /* White key on hover */
+    color: #1C1C1C;
+    /* Text becomes black */
+    border-color: #1C1C1C;
+    /* Border matches text for inverted look */
 }
 
 /* About Me Section */
