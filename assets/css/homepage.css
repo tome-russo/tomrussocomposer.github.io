@@ -8,6 +8,7 @@ body {
     /* Default text color */
     line-height: 1.6;
     font-size: 16px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* Hero Section */
@@ -38,24 +39,23 @@ body {
     max-width: 90%;
 }
 
-
-/* Piano Key Buttons */
+/* Piano Key Buttons – Hero & About */
 .hero .buttons a,
 .about .button {
     text-decoration: none;
     padding: 15px 40px;
-    /* Make them longer like piano keys */
+    /* Long rectangular key shape */
     background-color: #1C1C1C;
-    /* Black key */
+    /* Black piano key */
     color: #FFFFFF;
     /* White text */
     font-size: 1.2rem;
     border-radius: 4px 4px 10px 10px;
-    /* Slightly rounded ends like piano keys */
+    /* Rounded bottom like piano keys */
     border: 2px solid #FFFFFF;
-    /* White outline */
+    /* White outline like key edge */
     box-shadow: 0 4px 0 #000000;
-    /* Give a subtle depth for a raised key effect */
+    /* Slightly raised key effect */
     transition: all 0.3s;
 }
 
@@ -68,10 +68,10 @@ body {
     border-color: #1C1C1C;
     /* Border matches text */
     box-shadow: 0 4px 0 #333333;
-    /* Slight shadow change on hover for depth */
+    /* Shadow change for depth */
 }
 
-/* Optional: Spacing between keys to look like piano layout */
+/* Spacing between keys to mimic piano layout */
 .hero .buttons a+a,
 .about .button+.button {
     margin-left: 10px;
@@ -101,21 +101,6 @@ body {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.about .button {
-    display: inline-block;
-    padding: 10px 25px;
-    background-color: #008AFF;
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.about .button:hover {
-    background-color: #0077CC;
 }
 
 /* Reviews Section */
@@ -178,6 +163,8 @@ body {
     text-align: center;
     width: 200px;
     transition: transform 0.3s;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .video-link img {
@@ -196,49 +183,27 @@ body {
     transform: translateY(-10px);
 }
 
-/* Footer Section */
-footer {
-    padding: 30px 20px;
-    background-color: #1C1C1C;
-    /* Dark footer background */
-    color: #BBBBBB;
-    text-align: center;
-}
-
-footer a {
-    color: #FFFFFF;
-    text-decoration: none;
-    margin: 10px;
-}
-
-footer a:hover {
-    color: #008AFF;
-    /* Hover effect on links */
-}
-
 /* Beautiful Jekyll Navbar Customizations */
 .navbar {
     background-color: #333333;
-    /* Dark background for the navbar */
+    /* Dark background for navbar */
     color: #FFFFFF;
 }
 
 .navbar .navbar-brand {
     color: #FFFFFF;
-    /* White brand color */
     font-size: 1.8rem;
     font-weight: bold;
 }
 
 .navbar a {
     color: #FFFFFF;
-    /* White navbar links */
     text-decoration: none;
 }
 
 .navbar a:hover {
-    color: #008AFF;
-    /* Blue hover color for links */
+    color: #1C1C1C;
+    /* Piano-themed hover color (like black key) */
 }
 
 /* Mobile responsiveness for Hero Section and Buttons */
@@ -248,8 +213,10 @@ footer a:hover {
         max-width: 80%;
     }
 
-    .hero .buttons a {
-        padding: 10px 20px;
+    .hero .buttons a,
+    .about .button {
+        padding: 10px 25px;
+        /* Smaller keys on mobile */
         font-size: 1rem;
     }
 
