@@ -39,32 +39,43 @@ body {
 }
 
 
-.hero .buttons {
-    display: flex;
-    gap: 20px;
-}
-
-.hero .buttons a {
+/* Piano Key Buttons */
+.hero .buttons a,
+.about .button {
     text-decoration: none;
-    padding: 15px 30px;
+    padding: 15px 40px;
+    /* Make them longer like piano keys */
     background-color: #1C1C1C;
-    /* Black piano key */
+    /* Black key */
     color: #FFFFFF;
     /* White text */
     font-size: 1.2rem;
-    border-radius: 5px;
+    border-radius: 4px 4px 10px 10px;
+    /* Slightly rounded ends like piano keys */
     border: 2px solid #FFFFFF;
-    /* Subtle white outline like piano key edge */
+    /* White outline */
+    box-shadow: 0 4px 0 #000000;
+    /* Give a subtle depth for a raised key effect */
     transition: all 0.3s;
 }
 
-.hero .buttons a:hover {
+.hero .buttons a:hover,
+.about .button:hover {
     background-color: #FFFFFF;
     /* White key on hover */
     color: #1C1C1C;
-    /* Text becomes black */
+    /* Black text */
     border-color: #1C1C1C;
-    /* Border matches text for inverted look */
+    /* Border matches text */
+    box-shadow: 0 4px 0 #333333;
+    /* Slight shadow change on hover for depth */
+}
+
+/* Optional: Spacing between keys to look like piano layout */
+.hero .buttons a+a,
+.about .button+.button {
+    margin-left: 10px;
+    /* Small gap between keys */
 }
 
 /* About Me Section */
