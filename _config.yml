@@ -9,6 +9,9 @@
 # --- Required options --- #
 ############################
 
+baseurl: "/tomrussocomposer.github.io"  # <-- your project repo
+
+
 # Name of website
 title: Tom Russo Composer
 
