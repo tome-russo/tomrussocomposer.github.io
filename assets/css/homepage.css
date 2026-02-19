@@ -1,12 +1,6 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
+/* General Styles (Override or add to the default Beautiful Jekyll styles) */
 
-/* Body and Layout */
+/* Body and Page Layout */
 body {
     background-color: #FFFFFF;
     /* White background */
@@ -21,9 +15,9 @@ body {
     position: relative;
     width: 100%;
     height: 500px;
-    /* Adjust the height as needed */
-    background-image: url('path-to-hero-image.jpg');
-    /* Add your image path */
+    /* Adjust height as needed */
+    background-image: url('/assets/images/hero-image.jpg');
+    /* Replace with actual hero image path */
     background-size: cover;
     background-position: center;
     color: #FFFFFF;
@@ -32,6 +26,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 20px;
 }
 
 .hero h1 {
@@ -40,6 +35,7 @@ body {
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
+    max-width: 90%;
 }
 
 .hero .buttons {
@@ -51,7 +47,7 @@ body {
     text-decoration: none;
     padding: 15px 30px;
     background-color: #008AFF;
-    /* Piano key blue */
+    /* Blue, like a piano key */
     color: #FFFFFF;
     font-size: 1.2rem;
     border-radius: 5px;
@@ -60,15 +56,15 @@ body {
 
 .hero .buttons a:hover {
     background-color: #0077CC;
-    /* Darker hover effect */
+    /* Slightly darker blue on hover */
 }
 
 /* About Me Section */
 .about {
     position: relative;
     padding: 50px 20px;
-    background-image: url('path-to-about-image.jpg');
-    /* Add your image path */
+    background-image: url('/assets/images/about-image.jpg');
+    /* Replace with actual image path */
     background-size: cover;
     background-position: center;
     color: #FFFFFF;
@@ -83,6 +79,9 @@ body {
 .about p {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about .button {
@@ -104,7 +103,7 @@ body {
 .reviews {
     padding: 50px 20px;
     background-color: #F4F4F4;
-    /* Light grey background */
+    /* Light gray background */
 }
 
 .reviews h2 {
@@ -196,4 +195,59 @@ footer a {
 footer a:hover {
     color: #008AFF;
     /* Hover effect on links */
+}
+
+/* Beautiful Jekyll Navbar Customizations */
+.navbar {
+    background-color: #333333;
+    /* Dark background for the navbar */
+    color: #FFFFFF;
+}
+
+.navbar .navbar-brand {
+    color: #FFFFFF;
+    /* White brand color */
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: #FFFFFF;
+    /* White navbar links */
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #008AFF;
+    /* Blue hover color for links */
+}
+
+/* Mobile responsiveness for Hero Section and Buttons */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+        max-width: 80%;
+    }
+
+    .hero .buttons a {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .about h2 {
+        font-size: 2.5rem;
+    }
+
+    .about p {
+        font-size: 1.1rem;
+    }
+
+    .reviews h2,
+    .videos h2 {
+        font-size: 2.5rem;
+    }
+
+    .video-link {
+        width: 150px;
+    }
 }
