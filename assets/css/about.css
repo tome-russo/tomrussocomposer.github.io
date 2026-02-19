@@ -1,0 +1,81 @@
+/* About Page Styles (matches piano theme) */
+
+/* Hero Section */
+.about-page-hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url('/assets/images/about-hero.jpg');
+    /* Placeholder image */
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.about-page-hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+/* About Content Section */
+.about-content {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    color: #333333;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #1C1C1C;
+    /* Piano black for headings */
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.about-content ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.about-content a {
+    color: #1C1C1C;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #1C1C1C;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.about-content a:hover {
+    color: #FFFFFF;
+    background-color: #1C1C1C;
+    border-color: #FFFFFF;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .about-page-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-content {
+        font-size: 1.1rem;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+    }
+}
