@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My website
+title: Tom Russo Composer
 
 # Your name to show in the footer
-author: Some Person
+author: Tomasso Russo
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -21,10 +21,9 @@ author: Some Person
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Videos:
+    - 
+  Reviews: 
 
 ################
 # --- Logo --- #
@@ -51,20 +50,20 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
+# rss: true  # remove this line if you don't want to show an RSS link at the bottom
+# facebook: deanattali
+# github: daattali
+# twitter: daattali
+# patreon: DeanAttali
+# youtube: "@daattali"
+  instagram: tome_russo
+#  whatsapp: 15551212
 #  medium: yourname
 #  reddit: yourname or r/yoursubreddit
 #  linkedin: daattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
 #  spotify: yourname
 #  telephone: +14159998888
 #  steam: deanat78
